@@ -1,3 +1,7 @@
-<h1> <%= post.escape("title") %></h1>
+<h1><%= post.escape("title") %></h1>
 
 <p><%= post.escape("body") %> </p>
+
+
+<a href="/#/posts/<%= post.get("id") %>/edit" >Edit Post </a> <br>
+<a href="">back</a>

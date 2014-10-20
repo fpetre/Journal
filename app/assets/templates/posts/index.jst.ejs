@@ -1,8 +1,10 @@
 <% posts.each(function (post) { %>
-  <li><%=  post.escape("title") %>
+  <li><a href="/#/posts/<%= post.get("id") %>"><%=  post.escape("title") %></a>
     <button data-id="<%= post.escape("id") %>"
             class="delete-post">
       Delete
     </button>
   </li>
 <% }); %>
+
+<a href="/#/posts/new">New Post</a>

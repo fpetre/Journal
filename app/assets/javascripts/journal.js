@@ -5,6 +5,8 @@ window.Journal = {
   Routers: {},
   initialize: function() {
     new Journal.Routers.JournalRouter($('body'));
+
+    Backbone.history.start();
   }
 };
 
