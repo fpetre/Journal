@@ -31,3 +31,5 @@ Journal.Views.PostsIndex = Backbone.View.extend({
     return this;
   }
 });
+
+Journal.Views.Index = new Journal.Views.PostsIndex ({ collection: Journal.Collections.posts });
